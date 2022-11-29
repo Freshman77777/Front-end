@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-5 bg-dark text-white text-center">
+        <h1>Freshman77777</h1>
+        <p>&#128075; welcome!</p> 
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <a class="navbar-brand ms-3 me-5" href="#">
+                    <img src="../img/logo.png" alt="Logo" style="height:28px;" class="rounded-pill">
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle bg-dark" data-bs-toggle="dropdown">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Normal</a></li>
+                        <li><a class="dropdown-item active" href="#">Active</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+                    </ul>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <span class="navbar-text me-5">홍길동님 환영합니다.</span>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="bg-dark text-white">About Me</h2>
+                <span class="badge bg-dark">Hello!</span>
+                <img src="../img/Hello.png" alt="Hello" width="100%">
+                <p>패션 정보 제공 IT 서비스를 만들고 싶은 개발자 취준생입니다</p>
+                <h3 class="mt-4"></h3>
+                
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                  </svg>
+                    Go to youtube </p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-dark" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="https://www.youtube.com/@onthelook">Link : Onthelook</a>
+                    </li>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle bg-dark" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Normal</a></li>
+                            <li><a class="dropdown-item active" href="#">Active</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="https://www.youtube.com/@kingtaku3663">Link : 킹타쿠</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="https://www.youtube.com/@Uyeon">Link : U yeon(우연)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="https://www.youtube.com/@Cheol">Link : Cheol(철)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2 class="bg-dark text-white">TITLE HEADING</h2>
+                <span class="badge bg-dark">코트의 계절</span>
+                <img src="../img/coat.jpg" alt="coat" width="100%">
+                <p>2022, 겨울 트렌드</p>
+                <p>2000년대 패션의 부활과 더불어 그동안 실용적이고 
+                   활동성있는 옷들에 대한 반작용으로 확실히 전반적인 무드가 화려해졌어요</p>
+
+                <h2 class="mt-5 bg-dark text-white">TITLE HEADING</h2>
+                <span class="badge bg-dark">2023 주목해야 할 컬러</span>
+                <img src="../img/DR.png" alt="digital ravendar" width="100%" >
+                <p>PANTONE</p>
+                <p>2023년 주목해야 할 팬톤 컬러인 디지털 라벤더는 우리의 웰빙과 디지털 낙관주의에 연결되는 감각적인 톤을 표현
+                    글로벌 판데믹을 거친 후 밝은 미래를 염원하며 안정성과 평온함 및 균형을 가질 수 있는 삶을 기원하는 깊은 의미를 담았어요.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 p-2 bg-secondary text-white text-center">
+        <p>copyright &copy; Freshman77777 All rights reserved.</p>
+    </div>
+
+</body>
+</html>
