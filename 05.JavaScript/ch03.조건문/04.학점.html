@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학점</title>
     <script>
-        function rank() {
+        function score() {
             const mid =Number(document.getElementById('mid').value);
             const final =Number(document.getElementById('final').value);
             const report =Number(document.getElementById('report').value);
             const average = mid * 0.3 + final * 0.5 + report * 0.2;
             const avgTag = document.getElementById('average');
-            avgTag.innerHTML = `<h4>가중평균 : ${average}</h4>`;
+            avgTag.innerHTML = average;
 
             let grade;
             switch(parseInt(average / 10)) {
@@ -29,17 +29,45 @@
                     grade = 'F';      
             }
             const gradeTag = document.getElementById('grade');
-            gradeTag.innerHTML = `<h4>학점: ${grade}</h4>`;
+            gradeTag.innerHTML = grade;
         }        
     </script>
+    <style>
+        td{ text-align: center;}
+    </style>
 </head>
 <body style="margin: 50px;">
-    <input type="text" id="mid" placeholder="100점 만점으로 입력하세요.">
-    <input type="text" id="final" placeholder="100점 만점으로 입력하세요.">
-    <input type="text" id="report" placeholder="100점 만점으로 입력하세요.">
-    <button onclick="rank()">학점 계산</button><br>
+    <table>
+        <tr>
+            <td>중간고사:</td>
+            <td><input type="text" id="mid" placeholder="100점 만점으로 입력하세요."></td>
+        </tr>
+        <tr>
+            <td>기말고사:</td>
+            <td><input type="text" id="final" placeholder="100점 만점으로 입력하세요."></td>
+        </tr>
+        <tr>
+            <td>과제:</td>
+            <td><input type="text" id="report" placeholder="100점 만점으로 입력하세요."></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="score()">학점계산</button></td>
+        </tr>
+        <tr>
+            <td>가중평균:</td>
+            <td id="average"></td>
+        </tr>
+        <tr>
+            <td>학점:</td>
+            <td id="grade"></td>
+        </tr>
+    </table>
+    <!-- <input type="text" id="mid" placeholder="100점 만점으로 입력하세요.">
+         <input type="text" id="final" placeholder="100점 만점으로 입력하세요.">
+         <input type="text" id="report" placeholder="100점 만점으로 입력하세요."> -->
+    <!-- <button onclick="rank()">학점 계산</button><br>
     <br>
     <p id="average"></p>
-    <p id="grade"></p>
+    <p id="grade"></p> -->        
 </body>
 </html>
